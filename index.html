@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Immersive Web Observatory</title>
+<style>
+body {
+  background: linear-gradient(to right, #29323c, #485563);
+}
+
+.wrapper {
+  position: relative;
+}
+
+.size {
+  width:90vw;
+  height:90vh;
+}
+
+.background1 {
+  background-image: url("splash1a-white.svg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-name: fadeOut;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.background2 {
+  background-image: url("splash1b-white.svg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-name: fadeIn;
+  animation-timing-function: easy-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body>
+<div class="size wrapper">
+<div class="size background1"></div>
+<div class="size background2"></div>
+</div>
+</body>
+</html>
