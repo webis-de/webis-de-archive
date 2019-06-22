@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Immersive Web Observatory</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/uikit.min.css" />
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+
+<style>
+body, html {
+  background: white;
+  font: 400 15px/1.8 "Helvetica", sans-serif;
+  height: 99%;
+}
+
+a {
+  color:#fff;
+}
+
+.background {
+  background-image: url("img/digital-bauhaus-lab.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0%;
+  bottom: 7%;
+  width: 100%;
+  text-align: center;
+}
+
+.border {
+  position: relative;
+  left: 0%;
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.font1 {
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+
+.font2 {
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.border.font-space-top {
+  line-height:50px;
+  padding-bottom:0px;
+  z-index:1;
+}
+
+.border.font-space-middle {
+  line-height:50px;
+}
+
+.border.font-space-bottom {
+  line-height:50px;
+  padding-top:0px;
+}
+</style>
+</head>
+<body>
+
+
+<div uk-grid>
+  <div class="uk-width-1-1 uk-width-expand uk-text-center uk-padding-large uk-padding-remove-bottom">
+    <span class="border font1">PROFESSORS</span>
+  </div>
+
+<div class="uk-width-1-1">
+  <div class="uk-grid-medium uk-grid-match" uk-grid uk-height-match="row: false">
+    <div class="uk-width-1-4 uk-card uk-card-default uk-padding-remove uk-card-secondary">
+      <div style="background-image: url(img/stein.jpg);" class="uk-card-media-top uk-height-large uk-background-cover uk-background-center-center uk-background-norepeat"></div>
+      <div class="uk-card-body">
+        <h3 class="uk-card-title"><b>Benno Stein</b></h3> 
+        <p class="uk-visible@s">Bauhaus-Universität Weimar</p>
+      </div>
+    </div>
+    <div class="uk-width-1-4 uk-card uk-card-default uk-padding-remove uk-card-secondary">
+      <div style="background-image: url(img/froehlich.jpg);" class="uk-card-media-top uk-height-large uk-background-cover uk-background-center-center uk-background-norepeat"></div>
+      <div class="uk-card-body">
+        <h3 class="uk-card-title"><b>Bernd Froehlich</b></h3> 
+        <p class="uk-visible@s">Bauhaus-Universität Weimar</p>
+      </div>
+    </div>
+    <div class="uk-width-1-4 uk-card uk-card-default uk-padding-remove uk-card-secondary">
+      <div style="background-image: url(img/potthast.jpg);" class="uk-card-media-top uk-height-large uk-background-cover uk-background-top-center uk-background-norepeat"></div>
+      <div class="uk-card-body uk-text-top">
+        <h3 class="uk-card-title"><b>Martin Potthast</b></h3> 
+        <p class="uk-visible@s">Leipzig University</p>
+      </div>
+    </div>
+    <div class="uk-width-1-4 uk-card uk-card-default uk-padding-remove uk-card-secondary">
+      <div style="background-image: url(img/hagen.jpg);" class="uk-card-media-top uk-height-large uk-background-cover uk-background-top-center uk-background-norepeat"></div>
+      <div class="uk-card-body uk-text-top">
+        <h3 class="uk-card-title"><b>Matthias Hagen</b></h3> 
+        <p class="uk-visible@s">Martin-Luther-Universität Halle-Wittenberg</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="uk-width-1-1 uk-width-expand uk-text-center">
+  <div class="uk-padding-small"><span class="border font1">FUNDED BY THE</span></div>
+  <br><img src="img/bmbf-logo.svg" height="100px" alt="Federal Ministry of Research and Education" uk-img>
+</div>
+</body>
+</html>
