@@ -14,26 +14,42 @@ a {
   color:#fff;
 }
 
-.background {
+.background1 {
   background-image: url("img/bundesregierung19-ki-strategie-logo.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
   background-size: contain;
   background-color: white;
   height: 25%;
 }
 
+.background2 {
+  background-image: url("img/bauhaus-signet-face.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: contain;
+  background-color: black;
+  height: 75%;
+}
+
+@media (orientation: portrait) {
+  .background2 {
+    transform: translate(-50px);
+  }
+}
+
 .caption {
-  padding-top: 50px;
-  width: 100%;
-  text-align: center;
+  position: absolute;
+  left: 48%;
+  bottom: 25%;
+  width: 62%;
+  text-align: left;
   color: #000;
 }
 
 .caption span.border {
   position: relative;
   left: 0%;
-  background-color: #111;
   color: #fff;
   padding: 10px;
   border-radius: 5px;
@@ -48,17 +64,27 @@ a {
   font-size: 36px;
   letter-spacing: 2px;
 }
+
+.border.font-space-middle {
+  line-height:10px;
+}
 </style>
 </head>
 <body>
-<div class="background"></div>
+<div class="background1"></div>
+<div class="background2">
 <div class="caption">
 <span class="border font1">ENABLING ACADEMIC</span>
-<br><span class="border font2">COMPUTER SCIENCE</span>
-<br><span class="border font1">TO EXPLOIT THE ENTIRE WEB FOR</span>
-<br><span class="border font2">AI RESEARCH</span>
-<br><span class="border font1">AT INDUSTRY SCALE</span>
+<br><span class="border font2">COMPUTER</span>
+<br><span class="border font2 font-space-middle">SCIENCE</span>
+<div style="margin-top:-13px">
 <br><span class="border font1">FOR THE FIRST TIME</span>
+<br><span class="border font1">TO EXPLOIT THE WEB</span>
+<br><span class="border font1">AT INDUSTRY SCALE</span>
+<br><span class="border font1">FOR</span>
+<br><span class="border font2">AI RESEARCH</span>
+</div>
+</div>
 </div>
 </body>
 </html>
