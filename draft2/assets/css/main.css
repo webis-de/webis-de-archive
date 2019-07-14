@@ -2239,7 +2239,7 @@ input, select, textarea {
 		margin: 0;
 		line-height: 1em;
 		padding: 1.5em;
-		background: #39454b;
+		background: #323232;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
 	}
@@ -2344,8 +2344,8 @@ input, select, textarea {
 /* Four */
 
 	#four {
-		background: url("../../images/digital-bauhaus-lab.jpg");
 		background: url("../../images/dbl-floor-plan.png");
+		background: url("../../images/digital-bauhaus-lab.jpg");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center center;
